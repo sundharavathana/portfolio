@@ -68,7 +68,7 @@ function Certificates() {
   return (
     <section className="certifications">
       <h2 className="heading" data-aos="zoom-out-down">
-        My <span>Certifications</span>
+        <span>Certifications</span>
 
       </h2>
 

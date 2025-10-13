@@ -38,7 +38,7 @@ function Navigation() {
             Sundharavathana
           </NavLink>
 
-          {/* Toggler */}
+        
           <button
             className="navbar-toggler"
             type="button"
@@ -48,13 +48,13 @@ function Navigation() {
             onClick={toggleNavbar}
           >
             {isExpanded ? (
-              <span className="exit-icon">&times;</span> // ✖ Exit button
+              <span className="exit-icon">&times;</span> 
             ) : (
-              <span className="navbar-toggler-icon"></span> // Hamburger icon
+              <span className="navbar-toggler-icon"></span> 
             )}
           </button>
 
-          {/* Collapsible Menu */}
+      
           <div ref={collapseRef} className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
@@ -77,11 +77,7 @@ function Navigation() {
                   Projects
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link" to="/Certificates" onClick={closeNavbar}>
-                  Certificates
-                </NavLink>
-              </li>
+             
               <li className="nav-item">
                 <NavLink className="nav-link" to="/Contact" onClick={closeNavbar}>
                   Contact
@@ -92,7 +88,7 @@ function Navigation() {
         </div>
       </nav>
 
-      {/* Routes */}
+     
       <div style={{ marginTop: "80px" }}>
         <Routes>
           <Route path="/" element={<Home />} />

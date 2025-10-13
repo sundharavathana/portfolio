@@ -1,140 +1,75 @@
-.project-row{
-    display: flex;
-    gap: 60px;
-    justify-content: center;
-    padding-bottom: 30px;
-
-}
-:root{
-    --bg-color:#081b29;
-    --second-bg-color:#112e42;
-    --text-color:#ededed;
-    --main-color:#00abf0;
-}
-.project-col{
-    width: fit-content;
-    height: fit-content;
-  
-   border-radius: 40px;
-    position: relative;
-    
-    overflow: hidden;
-} 
-.projects{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.project-col img{
-    height: 300px;
-    width: 400px;
-    border-radius: 40px;
-    object-fit: cover;
-    display: block;
-       border: .2rem solid var(--main-color) ;
-  
+:root {
+  --bg-color: #081b29;
+  --second-bg-color: #112e42;
+  --text-color: #ededed;
+  --main-color: #00abf0;
 }
 
-/* .project-row .project-col::before{
-    content: '';
-     position: absolute;
-     text-align: center;
-     
-     top:0;
-     left: 0;
-     width: 100%;
-     height: 0;
-     background:rgba(8, 27, 41, 0.5);
-     z-index: 1; 
-     transition: .5s;
-
-
-} 
-/* .details{
-    display: none; 
-    height:50px;
-    width: 100px;
-    background-color: red;
-
-} 
-  .project-row .project-col:hover::before {
-    height: 100%;
-   
-    
-} 
- .project-col::before {
-    content: "View Project";         
-    position: absolute;            
-    top: 50%;                       
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;                  
-    font-size: 20px;              
-    font-weight: bold;              
-    font-family: Arial, sans-serif; 
-    text-align: center;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
-    opacity: 0;                    
-    transition: opacity 0.5s ease, transform 0.5s ease; 
-    z-index: 2;                 
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 0;
+  background: var(--bg-color);
 }
 
-.project-col:hover::before {
-    opacity: 1;                    
-    transform: translate(-50%, -50%) scale(1.1);
-} */
- .project-row .project-col::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-  
-    background: rgba(0, 171, 240, 0.4);
-    backdrop-filter: blur(5px);      
-    -webkit-backdrop-filter: blur(5px); 
-    
-    z-index: 1; 
-    transition: height 0.5s ease;
+/* Optional style for heading (does not break layout) */
+.heading {
+  width: 100%;
+
 }
 
-.project-row .project-col:hover::before {
-    height: 100%;
-}
-/* .cafe{
-    object-fit: cover;
-    width: 100%;
-    height: 100%; 
-}*/
-.project-row .project-col::before,
-.project-row .project-col::after {
-    pointer-events: none; 
+.project-card {
+  background: var(--second-bg-color);
+  border-radius: 20px;
+  border: 2px solid var(--main-color);
+  width: 320px;
+  overflow: hidden;
+  text-align: center;
+  color: var(--text-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-row .project-col::after {
-    content:"View Project";
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    color:var(--text-color);
-    font-size:20px;
-    font-weight:bold;
-    border: .2rem solid var(--main-color);
-    border-radius: 10px;
-    background: var(--bg-color);
-    font-family:Arial, sans-serif;
-    text-align:center;
-    text-shadow:1px 1px 5px rgba(0,0,0,0.7);
-    opacity:0;
-    transition:opacity 0.5s ease, transform 0.5s ease;
-    z-index:2; 
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 171, 240, 0.3);
 }
 
-.project-row .project-col:hover::after {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
+.project-info {
+  padding: 15px;
+}
 
+.project-info h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: var(--main-color);
+}
+
+.project-info p {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #ccc;
+}
+
+.view-btn {
+  background: var(--main-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.view-btn:hover {
+  background: #00c3ff;
+  transform: scale(1.05);
+}

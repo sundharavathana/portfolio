@@ -1,13 +1,15 @@
 import React from 'react';
 
 import './css/skill.css'
+import Certificates from './Certificates';
 
 function Skills(){
 
   return(
  
     <section className="skillssection">
-        <h2 className="head"data-aos="fade-down-left">My <span>Skills</span></h2> 
+        <h2 className="head"data-aos="fade-down-left"><span>Skills</span></h2> 
+        {/* <h3 className='subhead'>Technical <span>Skills</span></h3> */}
       
       <div className="division1">
         
@@ -30,15 +32,15 @@ function Skills(){
                 </div>
                 <div className="imgdiv"data-aos="fade-right">
                    <div className="item1">
-                        <img src="/html-5.png" alt="htmllogo" className='logoimg' />
+                        <img src="/html-5.png" alt="htmllogo" className='logoimg img-fluid' />
                       <h5 className='title'>HTML5</h5>
                    </div>
                     <div className="item1">
-                        <img src="/css-3.png" alt="htmllogo" className='logoimg' />
+                        <img src="/css-3.png" alt="htmllogo" className='logoimg img-fluid' />
                       <h5 className='title'>CSS3</h5>
                    </div>
                    <div className="item1">
-                        <img src="\icons8-javascript-48.png" alt="htmllogo" className='logoimg' />
+                        <img src="\icons8-javascript-48.png" alt="htmllogo" className='logoimg img-fluid' />
                       <h5 className='title'>Javascript</h5>
                    </div>
                        
@@ -56,6 +58,10 @@ function Skills(){
                    <div className="item1">
                     <img src="/react.png"          alt=""className='logoimg' />
                     <h5 className="title">React Js</h5>
+                   </div>
+                    <div className="item1">
+                    <img src="/dj.png"     alt=""className='logoimg' />
+                    <h5 className="title">Django</h5>
                    </div>
                 </div>
               </div>
@@ -81,16 +87,8 @@ function Skills(){
                     <h5 className="title">Github</h5>
 
                   </div>
-                  <div className="item1">
-                    <img src="\icons8-cisco-packet-tracer-50.png" alt="pylogo" className='logoimg cisco' />
-                    <h5 className="title">Cisco Packet Tracer</h5>
-
-                  </div>
-                  <div className="item1">
-                    <img src="\office.png" alt="pylogo" className='logoimg' />
-                    <h5 className="title">MS Office</h5>
-
-                  </div>
+         
+                 
                  
                       
                 </div>
@@ -112,8 +110,12 @@ function Skills(){
            </div>
            
       </div>
+     
       </div>
-         
+  
+      <br /><br />
+    
+         <Certificates/>
         
     </section>     
          
