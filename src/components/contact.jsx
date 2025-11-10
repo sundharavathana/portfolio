@@ -39,10 +39,10 @@ function Contact(){
                   
             </form>
             <div className="social">
-                    <a href="tel:+917305851354"><img src="\icons8-phone.gif" alt="email icon" className='media phn'/>Phn no: 73058 51354</a>
-                       <a href="https://wa.me/7305851354" target="_blank"><img src="\icons8-whatsapp.gif" alt="email icon" className='media'/>Whatsapp</a>
-                       <a href="https://www.instagram.com/im_sundhara_/" target="_blank"><img src="\icons8-instagram.gif" alt="email icon" className='media'/>Instagram</a>
-                       <a href="https://www.linkedin.com/in/sundharavathana0608" target="_blank"><img src="\icons8-linkedin (1).gif" alt="email icon" className='media'/>Linked-in</a>
+                    <a href="tel:+917305851354"><img src="phn.jpg" alt="email icon" className='media phn'/>Phn no: 73058 51354</a>
+                       <a href="https://wa.me/7305851354" target="_blank"><img src="wtp.jpg" alt="email icon" className='media'/>Whatsapp</a>
+                       <a href="https://www.instagram.com/im_sundhara_/" target="_blank"><img src="indeed.jpg" alt="email icon" className='media'/>Indeed</a>
+                       <a href="https://www.linkedin.com/in/sundharavathana0608" target="_blank"><img src="in.png" alt="email icon" className='media'/>Linked-in</a>
             </div>
                   
             

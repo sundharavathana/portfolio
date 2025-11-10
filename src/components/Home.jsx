@@ -28,12 +28,7 @@ function Home() {
             <h3>Front-end Developer</h3>
           </div>
           <p>
-            Aspiring Front-End Developer with a strong foundation in web
-            technologies including HTML, CSS, Bootstrap, and JavaScript. Quick
-            learner with a passion for building user-friendly, responsive web
-            applications. Experienced in team-based academic projects and
-            personal development work. Eager to contribute to innovative
-            development teams and grow in a fast-paced tech environment.
+            Aspiring Web Developer with a strong foundation in web technologies including HTML, CSS, Bootstrap, JavaScript, and ReactJS. Basic experience in backend development using Python, Django, and MySQL. Quick learner with a passion for building responsive, user-friendly web applications. Hands-on experience through academic projects and personal development work. Eager to contribute to innovative development teams and grow in a dynamic tech environment.
           </p>
 
           <div className="btn-box d-flex  flex-column flex-md-row gap-5  flex-wrap justify-content-center justify-content-xxl-start ">
