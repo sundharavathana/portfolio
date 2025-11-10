@@ -24,6 +24,7 @@ function Journey() {
 
   const experiences = [
     {
+    
       year: "July 2024 – Aug 2024",
       role: "Full-stack web development internship",
       company: "Accent Techno Soft | Coimbatore",
@@ -31,8 +32,17 @@ function Journey() {
         "Successfully completed intermediate full-stack web development training at Accent Techno Soft.",
         "Acquired practical skills in HTML, CSS, JavaScript, and MySQL technologies."
       ]
-    }
-  ];
+    },
+  
+
+  {
+    
+    year:"Mar-Sep",
+    role:"Python Fullstack development course",
+    company:"Witspire Solutions",
+    tasks:["Completed a comprehensive Python Fullstack Development course, gaining hands-on experience in front-end technologies including HTML, CSS, Bootstrap, JavaScript, and ReactJS.",
+"Developed multiple fullstack projects implementing back-end functionality using Python, Django, and MySQL, demonstrating end-to-end web application development skills"]
+  }];
 
   return (
     <section className="education">
@@ -58,28 +68,39 @@ function Journey() {
         </div>
 
         {/* Experience column */}
+      
         <div className="education-column col-12 col-md-6" data-aos="fade-left">
-          <h3 className="title">Experience</h3>
+        <h3 className='title'>Learning Experience</h3>
           <div className="education-box">
             {experiences.map((exp, index) => (
               <ExperienceItem
                 key={index}
+                title={exp.title}
                 year={exp.year}
                 role={exp.role}
                 company={exp.company}
                 tasks={exp.tasks}
               />
+              
             ))}
+            
           </div>
+         
+          
         </div>
+      
+        
       </div>
+     
     </section>
   );
 }
 
 /* Sub-component for Education */
-function EducationItem({ year, deg, ins, cgpa }) {
+function EducationItem({year, deg, ins, cgpa }) {
   return (
+    
+ 
     <div className="education-content">
       <div className="content">
         <div className="year">{year}</div>
@@ -88,12 +109,15 @@ function EducationItem({ year, deg, ins, cgpa }) {
         <p>{cgpa}</p>
       </div>
     </div>
+  
   );
 }
 
 /* Sub-component for Experience */
-function ExperienceItem({ year, role, company, tasks }) {
+function ExperienceItem({year, role, company, tasks }) {
   return (
+    <>
+      
     <div className="education-content">
       <div className="content">
         <div className="year">
@@ -108,7 +132,23 @@ function ExperienceItem({ year, role, company, tasks }) {
         </ul>
       </div>
     </div>
+    </>
   );
 }
+
+// function CourseItem({cname,ins,duration,year}){
+//   return(
+//      <div className="education-content">
+//       <div className="content">
+//         <div className="year">
+//           <i className="fa-solid fa-calendar-days"></i> {year}
+//         </div>
+//         <h3>{cname}</h3>
+//         <p>{ins}</p>
+//         <p>{duration}</p>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default Journey;

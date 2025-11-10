@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "boxicons/css/boxicons.min.css";
 import "aos/dist/aos.css";
 import "./css/home.css";
+import "../index.css"
 import AOS from "aos";
 import { Link } from "react-router-dom";
 

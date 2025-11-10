@@ -27,35 +27,15 @@ function Certificates() {
 
     },
     {
-      name: "TOP CODER'S 24",
+      name: "python fullstack development course",
       img: topcoder,
-      cont: "Participated in Top Coder’s 24 competition, 2024"
+      cont: "completed python fullstack course from apr-sep"
 
     },
-    {
-      name: "IBM SkillsBuild",
-      img: jsimg,
-      cont: "Built Chatbot- IBM SkillsBuild"
-
-    },
-    {
-      name: "SQL(Basic)",
-      img: jsimg,
-      cont: "SQL(Basic)- HackerRank"
-
-    },
-    {
-      name: "SQL(Intermediate)",
-      img: jsimg,
-      cont: "SQL(Intermediate)- HackerRank"
-
-    },
-    {
-      name: "SQL(Advanced)",
-      img: jsimg,
-      cont: "SQL(Advanced)- HackerRank"
-
-    },
+   
+    
+    
+   
     {
       name: "INTERNSHIP",
       img: intern,

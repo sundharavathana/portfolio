@@ -100,9 +100,7 @@
  
    padding-bottom: 20px;
 }
-/* .card:hover .card-body p, .card-body h1{
-  color: var(--bg-color);
-} */
+
  @media (max-width:768px){
    .swiper {
   width: 100%;

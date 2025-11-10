@@ -12,6 +12,7 @@
     
 
 }
+
 .nav-item{
     /* border:2px solid white; */
     text-align: center;
@@ -83,6 +84,7 @@ font-size: 1.4rem;
     color: var(--main-color);
 }
  @media (max-width:768px){
+    
     .navbar-collapse{
         background-color: black;
     }

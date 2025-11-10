@@ -29,13 +29,13 @@ function Projects() {
     {
       img: '/utube.png',
       link: 'https://sundhara-youtubeclone.netlify.app/',
-      title: 'YouTube Clone',
+      title: 'YouTube Frontpage',
       tech: 'HTML, CSS',
     },
     {
       img: '/paypal.png',
-      link: '#',
-      title: 'PayPal UI Clone',
+      link: 'https://paycolne-website.netlify.app/',
+      title: 'PayPal Website',
       tech: 'HTML, CSS, React',
     },
     {
@@ -44,6 +44,7 @@ function Projects() {
       title: 'Library Management',
       tech: 'Raw HTML',
     },
+   
   ];
 
   return (
