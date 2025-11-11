@@ -9,6 +9,7 @@ import jsimg from "/jscertificate.png";
 import pyimg from "/pycertificate.png";
 import topcoder from "/jscertificate.png";
 import intern from "/intern.jpg";
+import course from "/coursecertificate.jpg"
 
 
 
@@ -28,7 +29,7 @@ function Certificates() {
     },
     {
       name: "python fullstack development course",
-      img: topcoder,
+      img: course,
       cont: "completed python fullstack course from apr-sep"
 
     },
