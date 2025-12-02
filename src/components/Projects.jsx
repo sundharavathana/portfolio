@@ -4,7 +4,7 @@ function Projects() {
   const projectData = [
     {
       img: '/bldbnk.png',
-      link: 'https://sundhara-library-management.netlify.app/',
+      link: 'https://vimeo.com/1142387522?fl=pl&fe=sh',
       title: 'Bloodbank Website',
       tech: 'HTML, CSS, Bootstrap, JS, Django, MySQL',
     },

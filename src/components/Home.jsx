@@ -7,6 +7,21 @@ import AOS from "aos";
 import { Link } from "react-router-dom";
 
 function Home() {
+  const roles = [
+  "Front-end Developer",
+  "Back-end Developer",
+  "Fullstack Developer",
+];
+
+const [currentRole, setCurrentRole] = React.useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentRole((prev) => (prev + 1) % roles.length);
+  }, 2500);
+  return () => clearInterval(interval);
+}, []);
+
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
     AOS.refresh();
@@ -24,9 +39,10 @@ function Home() {
           <h1>
             Hi, I'm <span>Sundharavathana</span>
           </h1>
-          <div className="text-animate">
-            <h3>Front-end Developer</h3>
-          </div>
+         <div className="text-animate">
+  <h3>{roles[currentRole]}</h3>
+</div>
+
           <p>
             Aspiring Web Developer with a strong foundation in web technologies including HTML, CSS, Bootstrap, JavaScript, and ReactJS. Basic experience in backend development using Python, Django, and MySQL. Quick learner with a passion for building responsive, user-friendly web applications. Hands-on experience through academic projects and personal development work. Eager to contribute to innovative development teams and grow in a dynamic tech environment.
           </p>

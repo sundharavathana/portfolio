@@ -8,54 +8,50 @@ import Contact from "./contact";
 import "./css/nav.css";
 import { useRef, useState } from "react";
 
-
 function Navigation() {
   const [isExpanded, setIsExpanded] = useState(false);
   const collapseRef = useRef(null);
 
   const toggleNavbar = () => {
-    const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(collapseRef.current);
-    if (isExpanded) {
-      bsCollapse.hide();
-    } else {
-      bsCollapse.show();
-    }
+    const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(
+      collapseRef.current
+    );
+    isExpanded ? bsCollapse.hide() : bsCollapse.show();
     setIsExpanded(!isExpanded);
   };
 
   const closeNavbar = () => {
-    const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(collapseRef.current);
+    const bsCollapse =
+      window.bootstrap.Collapse.getOrCreateInstance(collapseRef.current);
     bsCollapse.hide();
     setIsExpanded(false);
   };
 
   return (
     <BrowserRouter>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg sticky-top">
+
         <div className="container">
-          {/* Brand */}
+
           <NavLink className="navbar-brand logo" to="/" onClick={closeNavbar}>
             Sundharavathana
           </NavLink>
 
-        
           <button
             className="navbar-toggler"
             type="button"
-            aria-controls="navbarNav"
             aria-expanded={isExpanded}
             aria-label="Toggle navigation"
             onClick={toggleNavbar}
           >
             {isExpanded ? (
-              <span className="exit-icon">&times;</span> 
+              <span className="exit-icon">&times;</span>
             ) : (
-              <span className="navbar-toggler-icon"></span> 
+              <span className="navbar-toggler-icon"></span>
             )}
           </button>
 
-      
-          <div ref={collapseRef} className="collapse navbar-collapse" id="navbarNav">
+          <div ref={collapseRef} className="collapse navbar-collapse">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
                 <NavLink className="nav-link" to="/" onClick={closeNavbar}>
@@ -77,7 +73,6 @@ function Navigation() {
                   Projects
                 </NavLink>
               </li>
-             
               <li className="nav-item">
                 <NavLink className="nav-link" to="/Contact" onClick={closeNavbar}>
                   Contact
@@ -85,20 +80,18 @@ function Navigation() {
               </li>
             </ul>
           </div>
+
         </div>
       </nav>
 
-     
-      <div style={{ marginTop: "80px" }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Education" element={<Education />} />
-          <Route path="/Skills" element={<Skills />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Certificates" element={<Certificates />} />
-          <Route path="/Contact" element={<Contact />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Education" element={<Education />} />
+        <Route path="/Skills" element={<Skills />} />
+        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Certificates" element={<Certificates />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
     </BrowserRouter>
   );
 }
